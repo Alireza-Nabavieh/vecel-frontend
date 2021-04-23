@@ -1,0 +1,12 @@
+import React from 'react'
+import Layout from  '../components/Layout'
+
+
+export default function AboutPage() {
+    return (
+        <Layout title={"about dj events"}>
+            <h1>About</h1>
+            <p>This is an app to find the latest DJ and other events</p>
+        </Layout>
+    )
+}
