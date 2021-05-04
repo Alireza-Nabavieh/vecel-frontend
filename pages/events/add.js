@@ -94,7 +94,7 @@ export default function AddEventPage
             <form onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.grid}>
                 <div>
-                    <label htmlFor='name'>Event Name</label>
+                    <label htmlFor='name'>عنوان</label>
                     <input
                     type='text'
                     id='name'
@@ -104,7 +104,7 @@ export default function AddEventPage
                     />
                 </div>
                 <div>
-                    <label htmlFor='performers'>Performers</label>
+                    <label htmlFor='performers'>ثبت کننده</label>
                     <input
                     type='text'
                     name='performers'
@@ -114,7 +114,7 @@ export default function AddEventPage
                     />
                 </div>
                 <div>
-                    <label htmlFor='venue'>Venue</label>
+                    <label htmlFor='venue'>کلید واژه</label>
                     <input
                     type='text'
                     name='venue'
@@ -124,7 +124,7 @@ export default function AddEventPage
                     />
                 </div>
                 <div>
-                    <label htmlFor='address'>Address</label>
+                    <label htmlFor='address'>آدرس</label>
                     <input
                     type='text'
                     name='address'
@@ -134,7 +134,7 @@ export default function AddEventPage
                     />
                 </div>
                 <div>
-                    <label htmlFor='date'>Date</label>
+                    <label htmlFor='date'>تاریخ</label>
                     {/* <input
                     type='date'
                     name='date'
@@ -152,7 +152,7 @@ export default function AddEventPage
                 </div>
 
                 <div>
-                    <label htmlFor='time'>Time</label>
+                    <label htmlFor='time'>زمان</label>
                     <input
                     type='text'
                     name='time'
@@ -164,7 +164,7 @@ export default function AddEventPage
                 </div>
 
                  <div>
-                    <label htmlFor='description'>Event Description</label>
+                    <label htmlFor='description'>شرح مطلب</label>
                     <textarea
                         type='text'
                         name='description'
