@@ -19,5 +19,8 @@
     "react-icons": "^4.2.0",
     "react-map-gl": "^6.1.12",
     "react-toastify": "^7.0.4"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   }
 }
