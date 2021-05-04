@@ -42,7 +42,7 @@ export default function EditEventPage({ evt,token }) {
     )
 
     if (hasEmptyFields) {
-      toast.error('Please fill in all fields')
+      toast.error('لطفاً تمام فیلدها را تکمیل کنید')
     }
 
     const res = await fetch(`${API_URL}/events/${evt.id}`, {
@@ -56,10 +56,10 @@ export default function EditEventPage({ evt,token }) {
 
     if (!res.ok) {
       if (res.status === 403 || res.status === 401) {
-        toast.error('Unauthorized')
+        toast.error('عدم دسترسی')
         return
       }
-      toast.error('Something Went Wrong')
+      toast.error('مشکلی به وجود آمده است!')
     } else {
       const evt = await res.json()
       router.push(`/events/${evt.slug}`)
@@ -94,7 +94,7 @@ export default function EditEventPage({ evt,token }) {
   return (
     <Layout title='مشاهده و ویرایش'>
       <Link href='/events'>بازگشت</Link>
-      <h1>Edit Event</h1>
+      <h1>ویرایش</h1>
       <ToastContainer bodyClassName="leftshow"/>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.grid}>

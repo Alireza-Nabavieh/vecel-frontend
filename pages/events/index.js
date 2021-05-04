@@ -13,7 +13,7 @@ export default function EventsPage({events, page,total}) {
   return (
     
     <Layout>
-        <h1>اطلاعیه‌ها</h1>
+        <h1>لیست محتوا</h1>
         {events.length===0 && <h3>No events to show</h3>}
 
         {events.map(evt=> (

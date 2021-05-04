@@ -19,7 +19,7 @@ export default function HomePage({events}) {
 
         {events.length>0 && (
               <Link href="/events">
-                <a className='btn-secondary'> نمایش تمام اطلاعیه‌ها</a>
+                <a className='btn-secondary'> نمایش تمام محتوا</a>
               </Link>
             )}
     </Layout>

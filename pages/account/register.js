@@ -22,7 +22,7 @@ export default function RegisterPage() {
         e.preventDefault()
 
         if(password !== passwordConfirm){
-            toast.error("Password do not match!")
+            toast.error("رمز عبور مطابقت ندارد!")
             return
         }
 

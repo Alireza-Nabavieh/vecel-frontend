@@ -42,7 +42,7 @@ export default function AddEventPage
         e.preventDefault()
         const hasEmptyFields=Object.values(values).some((element)=>element==='')
         if(hasEmptyFields){
-           toast.error("Please fill in all fields")
+           toast.error("لظفاً تمام گزینه‌ها تکمیل کنید")
         }
         else {
             const res=await fetch(`${API_URL}/events`,{
@@ -56,10 +56,10 @@ export default function AddEventPage
     
             if(!res.ok){
                 if(res.status===403 || res.status===401){
-                    toast.error('No token included.')
+                    toast.error('دسترسی ندارید!')
                     return
                 }
-                toast.error('Somethins wen wrong!')
+                toast.error('مشکلی به وجود آمده است!')
             }
             else{
                 const evt=await res.json()
