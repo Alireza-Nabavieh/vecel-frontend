@@ -38,8 +38,7 @@ export default function Header() {
                         </li>
                         <li>
                             <button onClick={()=> logout()}  className="btn-icons btn-secondary">
-                            <FaSignOutAlt/>&nbsp;  خروج 
-                            </button>
+                            <FaSignOutAlt/>&nbsp;  خروج </button>
                         </li>
                      </> 
                      :
@@ -47,7 +46,7 @@ export default function Header() {
                       <>
                         <li>
                             <Link href='/account/login'>
-                                <a className='btn-secondary btn-icon'> <FaSignInAlt/>&nbsp; ورود    </a>
+                                <a className='btn-secondary btn-icon'> <FaSignInAlt/>&nbsp; ورود</a>
                             </Link>
                          </li>
                       </>}
