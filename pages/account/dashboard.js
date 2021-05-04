@@ -31,7 +31,7 @@ export default function DashboardPage({events,token}) {
     return (
         <Layout title="داشبورد کاربر">
             <div className={styles.dash}>
-                 <h1>Dashboard</h1>
+                 <h1>اطلاعات ثبت شده من</h1>
                  <h3>پشتیبانی</h3>
 
                  {events.map((evt)=>(
