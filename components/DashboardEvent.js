@@ -12,11 +12,11 @@ export default function DashboardEvent({evt,handleDelete}) {
             </h4>
             <Link href={`/events/edit/${evt.id}`}>
                 <a className={styles.edit}>
-                     <FaPencilAlt/> <span>Edit Event</span>
+                     <FaPencilAlt/> <span>ویرایش</span>
                 </a>
             </Link>
             <a href="#" className={styles.delete} onClick={()=> handleDelete(evt.id)}>
-                <FaTimes/> <span>Delete</span>
+                <FaTimes/> <span>حذف</span>
             </a>
         </div>
     )
