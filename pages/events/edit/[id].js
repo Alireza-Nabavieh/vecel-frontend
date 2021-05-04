@@ -95,7 +95,7 @@ export default function EditEventPage({ evt,token }) {
     <Layout title='مشاهده و ویرایش'>
       <Link href='/events'>بازگشت</Link>
       <h1>Edit Event</h1>
-      <ToastContainer />
+      <ToastContainer bodyClassName="leftshow"/>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.grid}>
           <div>

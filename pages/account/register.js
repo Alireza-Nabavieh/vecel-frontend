@@ -33,7 +33,7 @@ export default function RegisterPage() {
             <div className={styles.auth}>
                 <h1><FaUser/> ثبت نام
                  </h1>
-                 <ToastContainer/>
+                 <ToastContainer bodyClassName="leftshow"/>
                  <form onSubmit={handleSubmit}>
                  <div>
                          <label htmlFor="username">نام کاربری  </label>

@@ -25,7 +25,7 @@ export default function LoginPage() {
             <div className={styles.auth}>
                 <h1><FaUser/> ورود
                  </h1>
-                 <ToastContainer/>
+                 <ToastContaine bodyClassName="leftshow"/>
                  <form onSubmit={handleSubmit}>
                      <div>
                          <label htmlFor="email">آدرس ایمیل</label>

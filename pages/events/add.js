@@ -90,7 +90,7 @@ export default function AddEventPage
         <Layout title={'درخواست پشتیبانی'}>
             <Link href="/events">بازگشت</Link>
             <h1>ثبت درخواست</h1>
-            <ToastContainer/>
+            <ToastContainer bodyClassName="leftshow"/>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.grid}>
                 <div>

@@ -83,3 +83,8 @@ h1 {
 input {
   font-family: "B Yekan";
 }
+
+.leftshow {
+  text-align: left;
+  direction: ltr;
+}

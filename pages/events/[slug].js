@@ -54,7 +54,7 @@ export default function Event({evt}) {
                  تاریخ انتشار: {new Date(evt.date).toLocaleDateString('fa-IR')}  
                 </span>
                 <h1>{evt.name}</h1>
-                <ToastContainer/>
+                <ToastContainer bodyClassName="leftshow"/>
                 {evt.image && (
                     <div className={styles.image}>
                         <Image src={evt.image.formats.medium.url} width={960} height={600}/>
