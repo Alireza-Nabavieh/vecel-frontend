@@ -173,7 +173,7 @@ export default function AddEventPage
                         onChange={handleInputChange}
                     ></textarea>
                 </div>
-                <input type='submit' value='Add Event' className='btn' />
+                <input type='submit' value='ثبت' className='btn' />
             </form>
         </Layout>
     )

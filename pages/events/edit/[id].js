@@ -180,7 +180,7 @@ export default function EditEventPage({ evt,token }) {
           ></textarea>
         </div>
 
-        <input type='submit' value='Update Event' className='btn' />
+        <input type='submit' value='بروزرسانی' className='btn' />
       </form>
 
       <h2>تصویر</h2>
