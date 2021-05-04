@@ -29,10 +29,10 @@ export default function DashboardPage({events,token}) {
         }
       }
     return (
-        <Layout title="User Dashboard">
+        <Layout title="داشبورد کاربر">
             <div className={styles.dash}>
                  <h1>Dashboard</h1>
-                 <h3>My Events</h3>
+                 <h3>پشتیبانی</h3>
 
                  {events.map((evt)=>(
                     <DashboardEvent key={evt.id} evt={evt} handleDelete={deleteEvent}/>

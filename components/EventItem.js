@@ -10,12 +10,12 @@ export default function EventItem({evt}) {
                 height={100}/>
             </div>
             <div className={styles.info}>
-                <span>{new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}</span>
+                <span>تاریخ انتشار: {new Date(evt.date).toLocaleDateString('fa-IR')} </span>
                 <h3>{evt.name}</h3>
             </div>
             <div className={styles.link}>
                 <Link href={`/events/${evt.slug}`}>
-                    <a className='btn'>Details</a>
+                    <a className='btn'>جزئیات</a>
                 </Link>
             </div>
         </div>

@@ -21,24 +21,24 @@ export default function LoginPage() {
         login({email, password})
     }
     return (
-        <Layout title='User Login'>
+        <Layout title='ورود کاربر'>
             <div className={styles.auth}>
-                <h1><FaUser/> Log In
+                <h1><FaUser/> ورود
                  </h1>
                  <ToastContainer/>
                  <form onSubmit={handleSubmit}>
                      <div>
-                         <label htmlFor="email">Email Address</label>
+                         <label htmlFor="email">آدرس ایمیل</label>
                          <input type="email" id="email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
                      </div>
                      <div>
-                         <label htmlFor="password">Password</label>
+                         <label htmlFor="password">پسورد</label>
                          <input type="password" id="password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
                      </div>
-                     <input type="submit" value="Login" className="btn" />
+                     <input type="submit" value="ورود" className="btn" />
                  </form>
                  <p>
-                     Don't have an account? <Link href='/account/register'>Register</Link>
+                     اکانت کاربری ندارید؟ <Link href='/account/register'>ثبت نام</Link>
                  </p>
             </div>
         </Layout>

@@ -87,9 +87,9 @@ export default function AddEventPage
     }
 
     return (
-        <Layout title={'Add New Event'}>
-            <Link href="/events">Go Back</Link>
-            <h1>Add Events</h1>
+        <Layout title={'درخواست پشتیبانی'}>
+            <Link href="/events">بازگشت</Link>
+            <h1>ثبت درخواست</h1>
             <ToastContainer/>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.grid}>

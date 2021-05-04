@@ -29,32 +29,32 @@ export default function RegisterPage() {
         register({username,email,password })
     }
     return (
-        <Layout title='User Registration'>
+        <Layout title='ثبت نام کاربر'>
             <div className={styles.auth}>
-                <h1><FaUser/> Register
+                <h1><FaUser/> ثبت نام
                  </h1>
                  <ToastContainer/>
                  <form onSubmit={handleSubmit}>
                  <div>
-                         <label htmlFor="username">Username  </label>
+                         <label htmlFor="username">نام کاربری  </label>
                          <input type="text" id="username" value={username} onChange={(e)=> setUsername(e.target.value)}/>
                      </div>
                      <div>
-                         <label htmlFor="email">Email Address</label>
+                         <label htmlFor="email">آدرس ایمیل</label>
                          <input type="email" id="email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
                      </div>
                      <div>
-                         <label htmlFor="password">Password</label>
+                         <label htmlFor="password">پسورد</label>
                          <input type="password" id="password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
                      </div>
                      <div>
-                         <label htmlFor="passwordConfirm">Confirm Password</label>
+                         <label htmlFor="passwordConfirm">تائید پسورد</label>
                          <input type="password" id="passwordConfirm" value={passwordConfirm} onChange={(e)=> setPasswordConfirm(e.target.value)}/>
                      </div>
-                     <input type="submit" value="Register" className="btn" />
+                     <input type="submit" value="ثبت نام" className="btn" />
                  </form>
                  <p>
-                     Already have an account? <Link href='/account/login'>Login</Link>
+                      حساب کاربری دارید؟ <Link href='/account/login'>ورود</Link>
                  </p>
             </div>
         </Layout>

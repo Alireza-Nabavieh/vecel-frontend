@@ -1,14 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "B Yekan";
+  src: url("../public/fonts/BYekan.eot"); /* IE9 Compat Modes */
+  src: url("../public/fonts/BYekan.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../public/fonts/BYekan.woff2") format("woff2"),
+    /* Modern Browsers */ url("../public/fonts/BYekan.woff") format("woff"),
+    /* Modern Browsers */ url("../public/fonts/BYekan.otf") format("opentype"),
+    /* Open Type Font */ url("../public/fonts/BYekan.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../public/fonts/BYekan.svg#BYekan")
+      format("svg"); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  direction: rtl;
 }
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "B Yekan", "Poppins", sans-serif;
   line-height: 1.8;
 }
 
@@ -63,4 +78,8 @@ h1 {
 
 .btn-icon svg {
   margin-right: 5px;
+}
+
+input {
+  font-family: "B Yekan";
 }

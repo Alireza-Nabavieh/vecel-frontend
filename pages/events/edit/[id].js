@@ -92,8 +92,8 @@ export default function EditEventPage({ evt,token }) {
 
  
   return (
-    <Layout title='Edit Event'>
-      <Link href='/events'>Go Back</Link>
+    <Layout title='مشاهده و ویرایش'>
+      <Link href='/events'>بازگشت</Link>
       <h1>Edit Event</h1>
       <ToastContainer />
       <form onSubmit={handleSubmit} className={styles.form}>

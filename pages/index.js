@@ -10,7 +10,7 @@ import Link from 'next/link'
 export default function HomePage({events}) {
   return (
     <Layout>
-        <h1>Home</h1>
+        <h1>صفحه نخست</h1>
         {events.length===0 && <h3>No events to show</h3>}
 
         {events.map(evt=> (
@@ -19,7 +19,7 @@ export default function HomePage({events}) {
 
         {events.length>0 && (
               <Link href="/events">
-                <a className='btn-secondary'> Show All Events</a>
+                <a className='btn-secondary'> نمایش تمام اطلاعیه‌ها</a>
               </Link>
             )}
     </Layout>

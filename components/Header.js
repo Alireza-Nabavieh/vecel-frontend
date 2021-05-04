@@ -12,7 +12,7 @@ export default function Header() {
         <header className={styles.header}>  
             <div className={styles.logo}>
                 <Link href='/'>
-                <a>DJ Events</a>
+                <a> Digikala IP</a>
                 </Link>
             </div>
            <Search/>
@@ -20,7 +20,7 @@ export default function Header() {
                 <ul>
                     <li>
                         <Link href='/events'>
-                        <a>Events</a>
+                        <a>اطلاعیه‌ها</a>
                         </Link>
                     </li>
                     {user ? 
@@ -28,17 +28,17 @@ export default function Header() {
                      <>
                         <li>
                             <Link href='/events/add'>
-                                <a>Add Event</a>
+                                <a>پشتیبانی</a>
                             </Link>
                         </li>
                         <li>
                             <Link href='/account/dashboard'>
-                                <a>Dashboard</a>
+                                <a>داشبورد</a>
                             </Link>
                         </li>
                         <li>
                             <button onClick={()=> logout()}  className="btn-icons btn-secondary">
-                                <FaSignOutAlt/> Logout
+                            <FaSignOutAlt/>&nbsp;  خروج 
                             </button>
                         </li>
                      </> 
@@ -47,7 +47,7 @@ export default function Header() {
                       <>
                         <li>
                             <Link href='/account/login'>
-                                <a className='btn-secondary btn-icon'> <FaSignInAlt/>  Login</a>
+                                <a className='btn-secondary btn-icon'> <FaSignInAlt/>&nbsp; ورود    </a>
                             </Link>
                          </li>
                       </>}
