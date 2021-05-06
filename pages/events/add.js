@@ -36,11 +36,19 @@ export default function AddEventPage
         date:currentDate(),
         time:'',
         description:'',
+        slug:"",
     })
     const router=useRouter()
     const    handleSubmit= async (e)=>{
         e.preventDefault()
         const hasEmptyFields=Object.values(values).some((element)=>element==='')
+
+        // create slug
+        const totalRes= await fetch(`${API_URL}/events/count`)
+        const total=await totalRes.json()
+        const numContent=total+1
+        values.slug='content-'+numContent
+
         if(hasEmptyFields){
            toast.error("لظفاً تمام گزینه‌ها تکمیل کنید")
         }
