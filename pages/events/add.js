@@ -36,7 +36,6 @@ export default function AddEventPage
         date:currentDate(),
         time:'',
         description:'',
-        slug:"",
     })
     const router=useRouter()
     const    handleSubmit= async (e)=>{
