@@ -25,6 +25,7 @@ export default function EditEventPage({ evt,token }) {
     date: evt.date,
     time: evt.time,
     description: evt.description,
+    slug: evt.slug,
   })
   const [imagePreview, setImagePreview] = useState(
     evt.image ? evt.image.formats.thumbnail.url : null
