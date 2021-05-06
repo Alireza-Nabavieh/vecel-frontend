@@ -28,44 +28,27 @@ export default function EventsPage({events, page,total}) {
 
 
 
-export async function getStaticPaths() {
+  
+export async function getStaticProps({query:{page=1}}){
+  //   Calculate start page
 
-    // Fetch Total/count
-    const totalRes= await fetch(`${API_URL}/events/count`)
-    const total=await totalRes.json()
-    const arr = Array.from({length: total}, (_, index) => index + 1);
-
-  const paths = arr.map((evt) => ({
-    params: { page:evt },
-  }))
-
-  return {
-    paths,
-    fallback: false,
-    // if true for dynamic website request again to get net paths in false show 404
-  }
-}
-
-export async function getStaticProps({ params: { page=1 } }) {
-    //   Calculate start page
-    const start= +page ===1 ? 0 :   (+page - 1)  * PER_PAGE
-
-    // Fetch Total/count
-    const totalRes= await fetch(`${API_URL}/events/count`)
-    const total=await totalRes.json()
-
-    const eventRes= await fetch(`${API_URL}/events?_sort=date:ASC&_limit=${PER_PAGE}&_start=${start}`)
-    const events=await eventRes.json()
+  const start= +page ===1 ? 0 :   (+page - 1)  * PER_PAGE
+  
+  // Fetch Total/count
+  const totalRes= await fetch(`${API_URL}/events/count`)
+  const total=await totalRes.json()
+  
+  // Fetch Events
+  const eventRes= await fetch(`${API_URL}/events?_sort=date:ASC&_limit=${PER_PAGE}&_start=${start}`)
+  const events=await eventRes.json()
 
   return {
-    props:{events,
-      page:+page,
-      total
-      },
-    revalidate: 1,
+      props:{events,
+        page:+page,
+        total
+        },
   }
 }
-
 
 
 
